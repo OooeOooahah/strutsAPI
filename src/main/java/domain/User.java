@@ -16,6 +16,17 @@ public class User implements Serializable {
     private Double salary;
     private Date date;
 
+    public User() {
+    }
+
+    public User(String username, String password, int age, Double salary, Date date) {
+        this.username = username;
+        this.password = password;
+        this.age = age;
+        this.salary = salary;
+        this.date = date;
+    }
+
     public String getUsername() {
         return username;
     }
