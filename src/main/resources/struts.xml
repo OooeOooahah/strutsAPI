@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.action.extension" value="action"/>
+    <package name="api" extends="struts-default" namespace="">
+<!--        <action name="submit" class="api_one.RequestDemo1">-->
+<!--            <result name="success" >/jsp/success.jsp</result>-->
+<!--        </action>-->
+        <action name="submit" class="api_two">
+            <result name="success" >/jsp/success.jsp</result>
+        </action>
+        <action name="userAction1" class="demo1.UserAction1">
+
+        </action>
+        <action name="userAction2" class="demo1.UserAction2">
+
+        </action>
+    </package>
+</struts>
